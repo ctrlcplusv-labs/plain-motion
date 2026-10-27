@@ -1,0 +1,21 @@
+{
+  "name": "plain-motion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Beat-synced motion graphics videos in plain TypeScript. No animation libraries, music synthesized in code, rendered with headless Chrome and ffmpeg.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "preview": "bun scripts/server.ts",
+    "render": "bun scripts/render.ts",
+    "render:draft": "bun scripts/render.ts --draft --out=draft.mp4",
+    "stills": "bun scripts/render.ts --stills=0.5,2.5,5,7.5,10,12.5,14.6",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.4",
+    "typescript": "6.0.3"
+  },
+  "packageManager": "bun@1.3.14"
+}

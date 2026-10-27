@@ -1,0 +1,225 @@
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--mark-top), var(--mark-bottom));
+  color: #fff;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.35), 0 24px 60px -12px rgb(61 127 239 / 0.55);
+}
+
+.mark-hero {
+  width: 200px;
+  height: 200px;
+  border-radius: 64px;
+  font-size: 80px;
+}
+
+.mark-finale {
+  width: 168px;
+  height: 168px;
+  border-radius: 53px;
+  font-size: 67px;
+}
+
+.mark-tiny {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  font-size: 12px;
+  box-shadow: 0 4px 10px -2px rgb(61 127 239 / 0.5);
+}
+
+.wordmark {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.wordmark-alex {
+  color: var(--ink);
+}
+
+.wordmark-cloud {
+  color: var(--accent-ink);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border: 1px solid rgb(13 14 18 / 0.12);
+  border-bottom-width: 2px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--surface), var(--sunken));
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.chip-sm {
+  height: 24px;
+  padding: 0 8px;
+}
+
+.chip-lg {
+  height: 62px;
+  padding: 0 22px;
+  border-width: 2px;
+  border-bottom-width: 5px;
+  border-radius: 16px;
+  font-size: 28px;
+}
+
+.chip-display {
+  height: 1.3em;
+  padding: 0 0.3em;
+  border-width: 3px;
+  border-bottom-width: 9px;
+  border-radius: 0.2em;
+  color: var(--ink);
+  font-size: 92px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.chip-accent,
+.chip.is-current {
+  border-color: rgb(47 111 224 / 0.3);
+  background: linear-gradient(180deg, #fff, #eaf2ff);
+  color: var(--accent-ink);
+}
+
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  min-width: 22px;
+  padding: 0 5px;
+  border: 1px solid var(--line-strong);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--surface), var(--sunken));
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.kbd-group {
+  display: flex;
+  gap: 3px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 760px;
+  height: 52px;
+  padding: 0 8px 0 16px;
+  border-radius: 999px;
+}
+
+.nav-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.82);
+  box-shadow: var(--shadow-subtle), 0 12px 40px -12px rgb(30 60 120 / 0.18);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-ink));
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  box-shadow: 0 1px 2px rgb(47 111 224 / 0.4);
+}
+
+.nav-name {
+  display: inline-flex;
+}
+
+.nav-char {
+  display: inline-block;
+  white-space: pre;
+}
+
+.nav-spacer {
+  flex: 1;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  gap: 2px;
+}
+
+.nav-link {
+  position: relative;
+  z-index: 1;
+  padding: 6px 12px;
+  color: var(--ink-muted);
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-link.is-active {
+  color: var(--ink);
+}
+
+.nav-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 999px;
+  background: rgb(13 14 18 / 0.07);
+}
+
+.nav-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  margin-left: 8px;
+  padding: 0 6px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-subtle);
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: var(--shadow-subtle);
+}
